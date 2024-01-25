@@ -1,0 +1,41 @@
+<h1>Spiderman</h1>
+
+<dl>
+    <td>Nombre:</td>
+    <dd> {{capitalizedName}}</dd>
+
+    <td>Edad:</td>
+    <dd> {{edadS}}</dd>
+
+    <td>Habilidad:</td>
+    <dd> habilidad</dd>
+
+    <td>Capitalizado:</td>
+    <dd> capitalizado</dd>
+
+</dl>
+
+<button
+(click)="changeName()"
+class='btn btn-primary mx-2'>
+    Cambiar nombre
+</button>
+
+<button 
+(click)="volverAlOriginal()"
+*ngIf="mostrarVolverOriginal" 
+class='btn btn-primary mx-2'>
+    Cambiar edad
+</button>
+
+<button 
+(click)="explotar()"
+class='btn btn-primary mx-2'>
+    Explotar
+</button>
+
+<button 
+(click)="probar()"
+class='btn btn-primary mx-2'>
+    Explotar5
+</button>
