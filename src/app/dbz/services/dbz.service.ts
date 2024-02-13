@@ -7,14 +7,19 @@ export class DbzService {
     public characters: Character[] = [
         {
           id: uuid(),
-          name: 'Krilin',
+          name: 'Ramon',
           power: 100,
         },
         { 
             id: uuid(),
-            name: 'Goku', 
+            name: 'Manolo', 
             power: 1000 
         },
+        { 
+          id: uuid(),
+          name: 'Pepe', 
+          power: 5000 
+      },
       ];
     
       public saveNewCharacter(character : Character):void{
