@@ -1,17 +1,17 @@
 <h1>Hola Mundo</h1>
 <hr>
 
-<div class ="row">
+<div class ="row d-flex justify-content-between">
 
     <div class="col">
-        <div class="col">
+        <div class="col flex-fill">
             <h4>Listado Personajes</h4>
-            <app-dbz-list [characterList]="characters"></app-dbz-list>
+            <app-dbz-list [characterList]="characters" (onDeleteElement)="onDeleteCharacter($event)" ></app-dbz-list>
         </div>
     </div>
 
     <div class="col">
         <h4>Agregar personaje</h4>
-        <app-dbz-form></app-dbz-form>
+        <app-dbz-form (onNewCharacter)="onNewCharacter($event)"></app-dbz-form>
     </div>
 </div>
