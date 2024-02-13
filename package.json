@@ -10,8 +10,9 @@
     "test": "ng test",
     "delete:docs": "del docs",
     "copy:dist": "copyfiles dist/bases ./docs -f",
+    "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist",
     "github:push": "git add . && git commit -m \"Uploading dist\" && git push -u origin main",
-    "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist"
+    "deploy:gihub": "npm run build:github && npm run github:push"
     
   },
   "private": true,
