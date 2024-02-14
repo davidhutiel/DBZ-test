@@ -16,8 +16,7 @@ export class FormComponent {
 
   }
   public character : Character = {
-    name : '',
-    power:0
+    name : ''
   };
 
   public addCharacter(){
@@ -25,6 +24,6 @@ export class FormComponent {
     this.onNewCharacter.emit(this.character)
 
     this.character.name = '';
-    this.character.power = 0;
+    this.character.power = undefined;
   } 
 }
